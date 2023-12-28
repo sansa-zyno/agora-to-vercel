@@ -62,4 +62,4 @@ app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`);
 });
 
-//module.exports.handler=serverless(app);
+module.exports.handler=serverless(app);
