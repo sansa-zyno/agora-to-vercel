@@ -56,7 +56,7 @@ const generateAccessToken = (req, resp) => {
 
 //app.get('/access_token', nocache, generateAccessToken);
 router.get('/access_token',generateAccessToken);
-app.use('/.netlify/functions/app',router);
+app.use('/home',router);
 
 /*app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`);
