@@ -58,8 +58,8 @@ const generateAccessToken = (req, resp) => {
 router.get('/access_token',generateAccessToken);
 app.use('/home',router);
 
-app.listen(PORT, () => {
+/*app.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`);
-});
+});*/
 
 module.exports.handler=serverless(app);
